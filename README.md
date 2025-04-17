@@ -1,6 +1,12 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
+[![Streamlit 1.44.1](https://img.shields.io/badge/Streamlit-1.44.1-ff69b4.svg)](https://streamlit.io/)
+
 # Football Video Analyst
 
-A sophisticated football video analysis tool powered by Gemini 2.5 Pro and Streamlit.
+![Project Banner](https://raw.githubusercontent.com/yYorky/FootballVideoAnalyst/refs/heads/main/static/FootballVideoAnalystCover.JPG)
+
+A sophisticated football video analysis tool powered by Google's Gemini 2.5 Pro and Streamlit.
 
 ## Overview
 
@@ -15,6 +21,16 @@ Football Video Analyst is an AI-powered application that automatically analyzes 
 - **Timestamp Identification**: Links analysis to specific timestamps in the video for key moments
 - **Match Summary**: Delivers concise overview of the match with tactical observations
 - **User-Friendly Interface**: Clean, intuitive Streamlit-based UI with embedded YouTube player
+
+## Demo
+
+Watch the Football Video Analyst in action:
+
+![Demo GIF 1](https://github.com/yYorky/FootballVideoAnalyst/blob/main/static/football_1.gif?raw=true)
+*Analyzing a YouTube highlight video.*
+
+![Demo GIF 2](https://github.com/yYorky/FootballVideoAnalyst/blob/main/static/football_2.gif?raw=true)
+*Viewing detailed player performance analysis.*
 
 ## Installation
 
@@ -48,23 +64,41 @@ pip install -r requirements.txt
 
 - **API Key**: Requires a Google API key with access to Gemini 2.5 Pro model
 - **Environment Variables**: Configure through a `.env` file
-- **Model Selection**: Currently using `gemini-2.5-pro-exp-03-25` (can be updated in config.py)
+- **Model Selection**: Currently using `gemini-2.5-pro-exp-03-25` (can be updated in `modules/config.py`)
 
 ## Directory Structure
 
 ```
-football-video-analyst/
+FootballVideoAnalyst/
 ├── app.py                 # Main Streamlit application
-├── requirements.txt       # Python dependencies
 ├── LICENSE                # MIT license file
 ├── README.md              # Project documentation
-├── modules/               # Project modules
+├── requirements.txt       # Python dependencies
+├── test.ipynb             # Jupyter notebook for testing/experiments
+├── .env.example           # Example environment file structure
+├── modules/               # Core project modules
 │   ├── analysis.py        # Video analysis functionality
-│   ├── config.py          # Configuration settings
+│   ├── config.py          # Configuration settings (API keys, model names)
 │   ├── styles.py          # UI styling and CSS
-│   ├── ui_components.py   # UI elements and components
+│   ├── ui_components.py   # Reusable Streamlit UI elements
 │   └── video_utils.py     # YouTube video processing utilities
+└── static/                # Static assets (images, GIFs)
+    ├── football_1.gif
+    ├── football_2.gif
+    └── FootballVideoAnalystCover.JPG
 ```
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/your-feature-name`).
+3.  Make your changes and commit them (`git commit -m 'Add some feature'`).
+4.  Push to the branch (`git push origin feature/your-feature-name`).
+5.  Open a Pull Request.
+
+Please ensure your code adheres to standard Python practices and includes relevant documentation or tests if applicable.
 
 ## License
 
@@ -76,5 +110,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Google Gemini](https://ai.google.dev/) for the advanced AI model
 - [Streamlit](https://streamlit.io/) for the web application framework
 - [Github](https://github.com/) for the Copilot to allow me to vibecode directly with agents
+
+## Contact
+
+For issues, questions, or suggestions, please open an issue on the [GitHub repository issues page](https://github.com/yYorky/FootballVideoAnalyst/issues).
 
 
