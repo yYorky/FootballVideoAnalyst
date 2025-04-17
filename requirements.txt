@@ -1,0 +1,4 @@
+google-genai
+jinja2
+streamlit
+python-dotenv
